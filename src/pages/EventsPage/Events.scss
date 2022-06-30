@@ -1,0 +1,30 @@
+.topbar{
+    @apply flex flex-row justify-between items-center
+}
+.date{
+    @apply flex flex-row items-center
+}
+.grid-icon{
+    @apply flex flex-row items-center bg-[#EDEFF5] rounded-lg py-[4px] px-[4px] space-x-[17px]
+}
+// .calender{
+//     @apply border
+// }
+.day{
+    @apply flex justify-center py-[18.5px]
+}
+.day-div{
+    @apply  grid grid-cols-5 border rounded-lg border-b-[1px] border-[#EDEFF5]
+}
+.date-div{
+    @apply  grid grid-cols-5  border-b-[1px]  border-[#EDEFF5]   border-l-[1px] border-[#EDEFF5] 
+}
+.date{
+    @apply flex justify-center border-[#EDEFF5] border-r-[1px] border-b-[1px]  border-[#EDEFF5] pt-[1rem] 
+}
+.date-n-event{
+    @apply flex flex-col
+}
+.event-time{
+    @apply flex flex-col justify-center
+}

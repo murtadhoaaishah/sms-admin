@@ -1,0 +1,111 @@
+.dashboard-page{
+    @apply px-10
+}
+
+.header{
+    @apply text-[1.5rem] text-[#353945] font-normal mb-10
+}
+.gwen{
+    @apply font-medium
+}
+.statistics{
+    @apply grid grid-cols-4 border rounded-lg border-[#EDEFF5] py-[2.625rem] mb-[3rem] 
+}
+.data{
+@apply flex flex-col border-r-[1px]
+}
+.heading{
+    @apply text-base text-[#353945] font-normal mb-[9px]
+}
+.percentage-number{
+    @apply flex flex-row items-center
+}
+.number{
+    @apply text-[#141416] text-2xl font-medium mr-4
+}
+
+.green-percentage{
+    @apply text-base text-[#1CBF7D] font-medium
+}
+.red-percentage{
+    @apply text-base text-[#EB0000] font-medium
+}
+.communication{
+    @apply flex flex-row items-center
+}
+.action-details{
+    @apply flex flex-col
+}
+.communication-icon{
+    @apply rounded-lg  px-[10.11px] py-[8.5px]
+}
+.things{
+    @apply mb-6 text-xl text-[#141416] font-normal
+}
+.communication-wrapper{
+    @apply border border-[#EDEFF5] rounded-lg mb-[3.53125rem]
+}
+.communication{
+    @apply py-6 border-b-[1px] border-[#EDEFF5] px-8 
+}
+.action-details{
+    @apply ml-4
+}
+.action-span{
+    @apply text-[#141416] text-base font-normal
+}
+.action-span{
+    @apply text-[#141416] text-base font-normal
+}
+.details-span{
+    @apply text-[#777E90] text-[14px] font-normal 
+}
+.grading-div{
+    @apply flex flex-row justify-between mb-[3.03125rem]
+}
+.calender-wrapper{
+    @apply flex flex-row items-center bg-[#EEEEEE] rounded-lg py-[14.39px] px-[1.125rem]
+}
+.termly-span{
+    @apply text-xl text-[#141416] font-normal 
+}
+.second-calender{
+    @apply mr-[10px]
+}
+.alltime-span{
+    @apply text-[14px] text-[#2E2E2E] font-normal mr-[12px]
+}
+.stat-summary{
+    @apply flex flex-row justify-between mb-[21.68px]
+}
+.first-part{
+@apply flex flex-col
+}
+.shape-span{
+    @apply flex flex-row items-center
+}
+.blue-num{
+    @apply text-[#1B72E7] text-xl font-medium ml-[8px]
+}
+.second-part{
+    @apply flex flex-row
+    }
+    .num-span{
+        @apply flex flex-col mr-10
+        }
+        .num{
+            @apply text-[#141416] text-xl font-medium 
+        }
+        
+        .tag{
+            @apply text-[#777E90] text-[14px] font-normal 
+        }
+        .transaction{
+            @apply mt-[44.4px] text-xl text-[#141416] font-normal
+        }
+        .arrow{
+            @apply pr-6
+        }
+        // .success-div{
+        //     @apply rounded-lg 
+        // }

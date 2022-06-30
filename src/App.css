@@ -1,0 +1,26 @@
+.Wrapper{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 30rem 1fr;
+}
+.final-div{
+  background-color: rgba(27, 114, 231, 0.08);
+}
+.percentage-arrow{
+  background-color: rgba(100, 200, 188, 0.1);
+}
+.red-percentage-arrow{
+  background-color: rgba(235, 0, 0, 0.08)
+}
+
+.communication-icon{
+  background-color: rgba(28, 191, 125, 0.1);
+}
+.calender-icon{
+background-color: rgba(55, 114, 255, 0.1);
+}
+.status{
+  background-color: rgba(21, 163, 54, 0.1); 
+  
+}

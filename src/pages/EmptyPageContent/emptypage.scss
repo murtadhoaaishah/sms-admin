@@ -1,0 +1,15 @@
+.wrapper{
+    @apply  flex flex-col  justify-center items-center h-screen overflow-hidden
+}
+
+
+.line1{
+    @apply text-xl text-[#141416]
+    font-medium mb-[8px]
+}
+.line2{
+    @apply font-[450] text-[#777E90] text-base max-w-[21.4675rem] text-center mb-[2.3125rem]
+}
+.wordings{
+    @apply mt-[2.875rem]
+}
