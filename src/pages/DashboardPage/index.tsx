@@ -53,18 +53,18 @@ const DashboardPage = () => {
 
     const communication = [
         {
-            icon: <Telephone />,
+            icon: <img src="/public/vectors/telephone.svg" alt="" />,
             action: 'Schedule a conference call/or send message',
             details: 'We use these details to match you with the right students'
         },
         {
-            icon: <Calender />,
+            icon: <img src="/vectors/calendar.svg" alt="" />,
 
             action: 'Setup your calendar',
             details: 'We use these details to match you with the right students'
         },
         {
-            icon: <Messanger />,
+            icon: <img src="/public/vectors/message.svg" alt="" />,
             action: 'Schedule a conference call/or send message',
             details: 'We use these details to match you with the right students'
         }

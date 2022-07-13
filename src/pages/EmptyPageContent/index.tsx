@@ -8,7 +8,7 @@ export type ctaprop = {
     prefixIcon?: ReactNode,
     sufixIcon?: ReactNode,
     label: string;
-    onClick: Function;
+    onClick?: Function;
 
 }
 export type emptyPageProp = {
@@ -29,7 +29,7 @@ const EmptyPage = ({ text, subtext, img, cta }: emptyPageProp
                 <h1 className='line1'>{text}</h1>
 
                 <h2 className='line2'>{subtext}</h2>
-                {cta && <Button label={cta.label} prefixIcon={cta.prefixIcon} customstyle='' />}
+                {cta && <Button label={cta.label} prefixIcon={cta.prefixIcon} customstyle='w-[10.75rem]' />}
             </div>
         </main>
     )

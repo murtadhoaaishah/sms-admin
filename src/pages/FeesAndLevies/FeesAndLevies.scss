@@ -1,0 +1,35 @@
+.active-tab{
+color: black;  
+position: relative;  
+}
+.active-tab::before{
+    content: "";
+    position: absolute;
+    background-color: #1B72E7;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 2px;
+}
+.fee-wrapper{
+    @apply grid grid-cols-4 mt-[2rem] gap-x-[20px]
+}
+.all-fees{
+    @apply flex flex-col  rounded-lg border-[1px] px-4 py-4
+}
+.basic-more{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.basic{
+    @apply text-base font-medium text-[#141416] mb-[8px]
+}
+.amount{
+    @apply font-normal text-[14px] text-[#777E90] mb-[24px]
+
+}
+.details{
+    @apply text-[14px] font-medium text-[#1B72E7]
+}

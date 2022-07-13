@@ -17,7 +17,7 @@ const DashboardLayout = ({ children, title, emptypageContent }: dashboardProp) =
             <div>
                 <Navbar />
 
-                <main className='h-screen overflow-auto pl-[1.5rem] pt-[1.5rem]'>
+                <main className='h-screen overflow-auto pl-[40px] pt-[1.5rem]'>
                     <h1 className='text-[1.5rem] font-medium text-[#141416]'>{title}</h1>
                     {
                         emptypageContent ? <EmptyPage {...emptypageContent} /> : children || null

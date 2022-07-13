@@ -105,8 +105,8 @@ const data = [
             },
             {
                 icon: <FeesAndLevees />,
-                menulink: 'Fees & Levees',
-                link: '/dashboard/fees&levees'
+                menulink: 'Fees & Levies',
+                link: '/dashboard/feesandlevies'
             }
         ]
     },
