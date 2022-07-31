@@ -141,9 +141,7 @@ const Aside = () => {
 
     const navigate = useNavigate()
 
-    const handleDropdown = () => {
 
-    }
 
     return (
         <main>

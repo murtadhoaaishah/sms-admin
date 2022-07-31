@@ -9,6 +9,7 @@ import Student from './pages/StudentPage'
 import Employees from './pages/EmployeePage'
 import Parents from './pages/ParentsPage'
 import Events from './pages/EventsPage'
+import FeesDetails from './pages/FeesDetailsPage'
 import FeesAndLevies from './pages/FeesAndLevies'
 
 
@@ -26,8 +27,8 @@ function App() {
       <Route path='/dashboard/employees' element={<Employees />} />
       <Route path='/dashboard/parents' element={<Parents />} />
       <Route path='/dashboard/events' element={<Events />} />
-      <Route path='/dashboard/feesandlevies' element={<FeesAndLevies />} />
-
+      <Route path='/dashboard/feesandlevies/' element={<FeesAndLevies />} />
+      <Route path='/dashboard/feesandlevies/:id' element={<FeesDetails />} />
     </Routes>
 
   )

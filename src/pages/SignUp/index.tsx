@@ -13,7 +13,7 @@ const SignUp = () => {
             <Input placeholder='last Name' />
             <Input placeholder='password' />
             <div className='w-[23.375rem]'>
-                <Button label='Sign up' customstyle='' />
+                <Button label='Sign up' />
 
             </div>
 

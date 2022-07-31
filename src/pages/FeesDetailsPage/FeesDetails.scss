@@ -1,0 +1,24 @@
+.operations{
+    @apply flex flex-row items-center mb-[3.656rem]
+}
+.input{
+    @apply flex flex-row items-center w-[18.75rem] mr-[1rem] border rounded-lg  h-[48px]}
+
+.each{
+    @apply flex flex-row items-center  border rounded-lg px-[17.33px]  mr-[1rem] w-[8.25rem] h-[48px]
+}
+.fee-header{
+ @apply grid grid-cols-2 border px-[24px] py-[15px]
+}
+.header1{
+    @apply font-normal text-[14px] text-[#353945]
+}
+.header2{
+   @apply font-normal text-[14px] text-[#353945]
+}
+.fee-amount{
+    @apply grid grid-cols-2 px-[24px] py-[22px] border
+}
+.fee-name{ 
+    @apply font-normal text-[14px] text-[#353945]
+}

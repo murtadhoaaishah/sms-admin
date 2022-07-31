@@ -1,0 +1,17 @@
+
+.all-fees{
+    @apply flex flex-col rounded-lg border-[1px] px-4 py-4
+}
+.basic-more{
+    @apply flex flex-row items-center justify-between
+}
+.basic{
+    @apply text-base font-medium text-[#141416] mb-[8px]
+}
+.amount{
+    @apply font-normal text-[14px] text-[#777E90] mb-[24px]
+
+}
+.details{
+    @apply text-[14px] font-medium text-[#1B72E7]
+}

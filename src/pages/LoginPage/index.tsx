@@ -9,7 +9,7 @@ const LoginPage = () => {
             <img src="/vectors/logo.svg" alt="logo" className='h-6 mb-10' />
             <h1 className='text-2xl text-center font-medium mb-4'>Log in</h1>
             <p className='text-base mb-10'>To sign up, fill in your personal details below</p>
-            <Input placeholder='First Name' />
+            <Input placeholder='First Name' customstyle='' />
             <Input placeholder='Email Address' className='mb-[1.875rem]' />
             <div className='final-div place-self-end mb-[2.875rem] border rounded-lg'>
                 <p className='text-[14px] text-[#1B72E7] font-normal py-[8px] px-[6px]'>Forgot password</p>
