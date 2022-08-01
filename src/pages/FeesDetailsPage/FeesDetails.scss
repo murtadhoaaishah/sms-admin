@@ -8,7 +8,7 @@
     @apply flex flex-row items-center  border rounded-lg px-[17.33px]  mr-[1rem] w-[8.25rem] h-[48px]
 }
 .fee-header{
- @apply grid grid-cols-2 border px-[24px] py-[15px]
+ @apply grid grid-cols-[1fr_2fr] border px-[24px] py-[15px]
 }
 .header1{
     @apply font-normal text-[14px] text-[#353945]
@@ -17,8 +17,8 @@
    @apply font-normal text-[14px] text-[#353945]
 }
 .fee-amount{
-    @apply grid grid-cols-2 px-[24px] py-[22px] border
+    @apply grid grid-cols-[1fr_2fr] border
 }
 .fee-name{ 
-    @apply font-normal text-[14px] text-[#353945]
+    @apply font-normal text-[14px] text-[#353945]  border-r-[1px]
 }

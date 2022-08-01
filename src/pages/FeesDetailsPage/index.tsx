@@ -27,7 +27,26 @@ const FeesDetails = () => {
                 </div>
                 <div className='fee-amount'>
                     <span className='fee-name'>Caution fee</span>
-                    <Input defaultValue="#5000.00" customstyle='outline-none' />
+                    <div className=''><Input defaultValue='#5000' customstyle='py-[1.375rem]!' /></div>
+                </div>
+                <div className='fee-amount'>
+                    <span className='fee-name'>Hostelfee</span>
+                    <div className=''><Input defaultValue='#5000' customstyle='py-[1.375rem]!' /></div>
+                </div>
+                <div className='fee-amount'>
+                    <span className='fee-name'>Transport</span>
+                    <div className=''><Input defaultValue='#55,000.000' customstyle='py-[1.375rem]!' /></div>
+                </div>
+                <div className='fee-amount'>
+                    <span className='fee-name'>Graduation</span>
+                    <div className=''><Input defaultValue='#78,000.00' customstyle='py-[1.375rem]!' /></div>
+                </div>
+                <div className='fee-amount'>
+                    <span className='fee-name'>Feeding</span>
+                    <div className=''><Input defaultValue='#300,000.00' customstyle='py-[1.375rem]!' /></div>
+                </div> <div className='fee-amount'>
+                    <span className='fee-name'>TOTAL</span>
+                    <div className=''><Input defaultValue='#305,580.00' customstyle='py-[1.375rem]!' /></div>
                 </div>
             </section>
 
