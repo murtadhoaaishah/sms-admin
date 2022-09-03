@@ -1,0 +1,33 @@
+// .table-wrapper{
+//     @apply table w-[120px]
+// }
+// .table-heading{
+//     @apply table w-[100%] table-fixed
+
+// }
+// .table-row{
+//     @apply table w-[100%]  table-fixed
+
+// }
+// .table-data{
+//     @apply text-center w-[10rem]
+// }
+// .table-head{
+//     @apply text-center w-[10rem]
+// }
+
+
+table{
+    display: table;
+    width: 1200px;
+}
+tr, thead{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+td, th{
+    text-align: center;
+    width: 10rem;
+}

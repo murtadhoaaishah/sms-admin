@@ -1,5 +1,5 @@
 .operations{
-    @apply flex flex-row items-center mb-[3.656rem]
+    @apply flex flex-row  items-center mb-[3.656rem]
 }
 .input{
     @apply flex flex-row items-center w-[18.75rem] mr-[1rem] border rounded-lg  h-[48px]}
@@ -20,5 +20,5 @@
     @apply grid grid-cols-[1fr_2fr] border
 }
 .fee-name{ 
-    @apply font-normal text-[14px] text-[#353945]  border-r-[1px]
+    @apply font-normal text-[14px] text-[#353945]  border-r-[1px] pl-[24px]  pt-[22px]
 }

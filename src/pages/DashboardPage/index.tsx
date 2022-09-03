@@ -13,7 +13,72 @@ import Chartt from '../../molecule/chart'
 import Shape from '../../atom/Vectors/Shape'
 import ArrowDown from '../../atom/Vectors/ArrowDown'
 import More from '../../atom/Vectors/More'
+import Table from '../../atom/Table'
+
 const DashboardPage = () => {
+
+    const heading = [
+        { name: '', key: 'arrow' },
+
+        { name: 'FULL NAME', key: 'full name' },
+        { name: 'AMOUNT', key: 'amount' },
+        { name: 'PAID VIA', key: 'paid via' },
+        { name: 'STATUS', key: 'status' },
+        { name: 'DATE', key: 'date' },
+        { name: '', key: 'more' }
+    ]
+
+    const tableData = [
+        {
+            arrow: <ArrowDown />,
+            name: 'Martin Geidt',
+            amount: '#5000',
+            paidvia: 'Remita',
+            status: <span>success</span>,
+            date: 'Oct. 14, 2021',
+            more: <More />
+        },
+        {
+            arrow: <ArrowDown />,
+            name: 'Martin Geidt',
+            amount: '#5000',
+            paidvia: 'Remita',
+            status: <span>success</span>,
+            date: 'Oct. 14, 2021',
+            more: <More />
+        },
+        {
+            arrow: <ArrowDown />,
+            name: 'Martin Geidt',
+            amount: '#5000',
+            paidvia: 'Remita',
+            status: <span>success</span>,
+            date: 'Oct. 14, 2021',
+            more: <More />
+        },
+        {
+            arrow: <ArrowDown />,
+            name: 'Martin Geidt',
+            amount: '#5000',
+            paidvia: 'Remita',
+            status: <span>success</span>,
+            date: 'Oct. 14, 2021',
+            more: <More />
+        }
+
+    ]
+
+    const data = tableData.map((item, itemIndex) => ({
+        arrow: item.arrow,
+        name: item.name,
+        amount: item.amount,
+        paidvia: item.paidvia,
+        status: item.status,
+        date: item.date,
+        more: item.more
+    }))
+
+
 
     const statistics = [
         {
@@ -65,7 +130,7 @@ const DashboardPage = () => {
         },
         {
             icon: <img src="/public/vectors/message.svg" alt="" />,
-            action: 'Schedule a conference call/or send message',
+            action: <span className='line-through'>Schedule a conference call/or send message</span>,
             details: 'We use these details to match you with the right students'
         }
     ]
@@ -130,8 +195,8 @@ const DashboardPage = () => {
                     </section>
                 </aside>
                 <Chartt />
-                <p className='transaction'></p>
-                <table>
+                <p className='transaction'>Transaction history</p>
+                {/* <table>
                     <thead>
                         <tr className='rounded-lg bg-[#F8F8F8] px-[5rem]'>
                             <td></td>
@@ -181,7 +246,12 @@ const DashboardPage = () => {
                             <td> <More /></td>
                         </tr>
                     </tbody>
-                </table>
+                </table> */}
+                <div>
+                    <Table tableData={data} heading={heading} />
+                </div>
+
+
             </main>
 
         </DashboardLayout>

@@ -8,11 +8,14 @@ const SignUp = () => {
             <img src="/vectors/logo.svg" alt="logo" className='h-6 mb-10' />
             <h1 className='text-2xl text-center font-medium mb-4'>Sign up</h1>
             <p className='text-base mb-10'>To sign up, fill in your personal details below</p>
-            <Input placeholder='First Name' />
-            <Input placeholder='Email Address' />
-            <Input placeholder='last Name' />
-            <Input placeholder='password' />
-            <div className='w-[23.375rem]'>
+            <div className='space-y-[24px]'>
+                <Input placeholder='First Name' customstyle='border w-[23.375rem]' />
+                <Input placeholder='Email Address' customstyle='border w-[23.375rem]' />
+                <Input placeholder='last Name' customstyle='border w-[23.375rem]' />
+                <Input placeholder='password' customstyle='border w-[23.375rem]' />
+            </div>
+
+            <div className='w-[23.375rem] mt-[40px]'>
                 <Button label='Sign up' />
 
             </div>

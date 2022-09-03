@@ -11,7 +11,7 @@ section{
 }
 
 .dashboard-div{
-@apply flex flex-row bg-[#F4FAFF] rounded-lg items-center py-[14px]  mb-[1.125rem] px-[1.5625rem]
+@apply flex flex-row rounded-lg items-center py-[14px]  mb-[1.125rem] px-[1.5625rem] hover:bg-[#F4FAFF]
 }
 
 .home{
@@ -19,7 +19,7 @@ section{
 }
 
 .dashboard{
-@apply font-medium text-[1rem] text-[#1B72E7] 
+@apply font-medium text-[1rem] hover:text-[#1B72E7] 
 }
 
 .title-div{
@@ -30,13 +30,13 @@ section{
     @apply text-[14px] font-normal text-[#777E90]
 }
 .icon-div{
-    @apply flex flex-row mb-[2.25rem] px-[1.4605rem]
+    @apply flex flex-row mb-[2.25rem] px-[17.67px] py-[14px] hover:bg-[#F4FAFF]
 }
 .icon{
     @apply mr-[1.388rem] 
 }
 .menu-link{
-    @apply font-[450] text-[1rem] text-[#353945]
+    @apply font-[450] text-[1rem] text-[#353945] hover:text-[#1B72E7]
 }
 .other-icon-div{
     @apply flex flex-row px-[1.4605rem]
