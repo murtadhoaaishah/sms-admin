@@ -13,21 +13,34 @@
 //     @apply text-center w-[10rem]
 // }
 // .table-head{
-//     @apply text-center w-[10rem]
+//     @apply   text-center w-[10rem]
 // }
 
-
 table{
+    margin-top:  40px;
     display: table;
-    width: 1200px;
+   
 }
-tr, thead{
+tr{
     display: table;
     table-layout: fixed;
     width: 100%;
+    height: 90px;
+   border-bottom:  1px solid #EDEFF5;
+    // align-items: center;
+}
+ thead{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: #F8F8F8;
 }
 
 td, th{
     text-align: center;
     width: 10rem;
+}
+.success{
+    background-color: rgba(21, 163, 54, 0.1);
 }

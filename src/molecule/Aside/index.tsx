@@ -148,7 +148,7 @@ const Aside = () => {
             <img src="/public/vectors/logo.svg" alt="logo" className='image' />
             <section>
                 <div className='dashboard-div'>
-                    <Home color={'#1B72E7'} className={`home`} />
+                    <Home color={'#1B72E7'} className='home' />
                     <p className='dashboard' onClick={() => navigate('/dashboard')} >Dashboard</p>
                 </div>
                 {data.map(({ title, submenu }, dataiIndex) => {

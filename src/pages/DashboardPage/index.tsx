@@ -1,4 +1,4 @@
-import React from 'react'
+import { useState } from 'react'
 import ArrowUp from '../../atom/Vectors/RedArrowUp'
 import Calender from '../../atom/Vectors/Calender'
 import Messanger from '../../atom/Vectors/Messanger'
@@ -16,66 +16,68 @@ import More from '../../atom/Vectors/More'
 import Table from '../../atom/Table'
 
 const DashboardPage = () => {
-
+    const [selectedId, setSelectedId] = useState("")
     const heading = [
         { name: '', key: 'arrow' },
-
-        { name: 'FULL NAME', key: 'full name' },
+        { name: 'NAME', key: 'name' },
         { name: 'AMOUNT', key: 'amount' },
-        { name: 'PAID VIA', key: 'paid via' },
+        { name: 'PAID VIA', key: 'paid_via' },
         { name: 'STATUS', key: 'status' },
         { name: 'DATE', key: 'date' },
-        { name: '', key: 'more' }
+        { name: '', key: 'action' }
     ]
 
     const tableData = [
         {
+            id: '1',
             arrow: <ArrowDown />,
             name: 'Martin Geidt',
             amount: '#5000',
             paidvia: 'Remita',
-            status: <span>success</span>,
+            status: <span className='success px-[10px] py-[4px] text-[#15A336] rounded-lg'>success</span>,
             date: 'Oct. 14, 2021',
-            more: <More />
+
         },
         {
+            id: '2',
             arrow: <ArrowDown />,
             name: 'Martin Geidt',
             amount: '#5000',
             paidvia: 'Remita',
-            status: <span>success</span>,
+            status: <span className='success px-[10px] py-[4px] text-[#15A336] rounded-lg'>success</span>,
             date: 'Oct. 14, 2021',
-            more: <More />
         },
         {
+            id: '3',
             arrow: <ArrowDown />,
             name: 'Martin Geidt',
             amount: '#5000',
             paidvia: 'Remita',
-            status: <span>success</span>,
+            status: <span className='success px-[10px] py-[4px] text-[#15A336] rounded-lg'>success</span>,
             date: 'Oct. 14, 2021',
-            more: <More />
+
         },
         {
+            id: '4',
             arrow: <ArrowDown />,
             name: 'Martin Geidt',
             amount: '#5000',
             paidvia: 'Remita',
-            status: <span>success</span>,
+            status: <span className='success px-[10px] py-[4px] text-[#15A336] rounded-lg'>success</span>,
             date: 'Oct. 14, 2021',
-            more: <More />
         }
 
     ]
 
     const data = tableData.map((item, itemIndex) => ({
+        id: item.id,
         arrow: item.arrow,
         name: item.name,
         amount: item.amount,
-        paidvia: item.paidvia,
+        paid_via: item.paidvia,
         status: item.status,
         date: item.date,
-        more: item.more
+        action: <span onClick={() => setSelectedId(item.id)}><More /></span>
     }))
 
 
@@ -135,7 +137,7 @@ const DashboardPage = () => {
         }
     ]
     return (
-        <DashboardLayout title={<p className='header'><span>Welcom,</span> <span className='gwen'>Gwen School</span> 👋</p>}>
+        <DashboardLayout title={<p className='header'><span>Welcome,</span> <span className='gwen'>Gwen School</span> 👋</p>}>
             <main className='dashboard-page'>
                 <section className='statistics'>{statistics.map(({ heading, number, percentage }, statisticsIndex) =>
                     <div key={`statistics_${statisticsIndex}`} className={`data flex  justify-left items-center ${statisticsIndex == statistics.length - 1 && ' border-0'}`} >
@@ -196,19 +198,7 @@ const DashboardPage = () => {
                 </aside>
                 <Chartt />
                 <p className='transaction'>Transaction history</p>
-                {/* <table>
-                    <thead>
-                        <tr className='rounded-lg bg-[#F8F8F8] px-[5rem]'>
-                            <td></td>
-                            <td>FULL NAME</td>
-                            <td>AMOUNT</td>
-                            <td>PAID VIA</td>
-                            <td>STATUS</td>
-                            <td>DATE</td>
-                            <td></td>
-                        </tr>
-                    </thead>
-                    <tbody>
+                {/* 
                         <tr>
                             <td> <ArrowDown /></td>
                             <td className=' text-[#353945] pr-[7.375rem] text-base font-normal'>Martin Geidt</td>
@@ -218,37 +208,11 @@ const DashboardPage = () => {
                             <td className='date text-[#353945] pr-[6rem] text-base font-normal'>Oct. 14, 2021</td>
                             <td> <More /></td>
                         </tr>
-                        <tr className='row '>
-                            <td className='arrow '> <ArrowDown /></td>
-                            <td className=' text-[#353945] pr-[7.375rem] text-base font-normal'>Martin Geidt</td>
-                            <td className='amount text-[#353945] pr-[7.3475rem] text-base font-normal'>5000</td>
-                            <td className='remita text-[#353945] pr-[10.1875rem] text-base font-normal'>Remita</td>
-                            <td><span className='status text-[#15A336] px-[10px] py-[4px] text-base rounded-lg max-w-max  font-normal'>Success</span></td>
-                            <td className='date text-[#353945] pr-[6rem] text-base font-normal'>Oct. 14, 2021</td>
-                            <td> <More /></td>
-                        </tr>
-                        <tr className='row '>
-                            <td className='arrow '> <ArrowDown /></td>
-                            <td className=' text-[#353945] pr-[7.375rem] text-base font-normal'>Martin Geidt</td>
-                            <td className='amount text-[#353945] pr-[7.3475rem] text-base font-normal'>5000</td>
-                            <td className='remita text-[#353945] pr-[10.1875rem] text-base font-normal'>Remita</td>
-                            <td><span className='status text-[#15A336] px-[10px] py-[4px] text-base rounded-lg max-w-max  font-normal'>Success</span></td>
-                            <td className='date text-[#353945] pr-[6rem] text-base font-normal'>Oct. 14, 2021</td>
-                            <td> <More /></td>
-                        </tr>
-                        <tr className='pt-[2.375rem] pb-[1.375rem] border-b-[1px] border-[#EDEFF5]'>
-                            <td className='arrow '> <ArrowDown /></td>
-                            <td className=' text-[#353945] pr-[7.375rem] text-base font-normal'>Martin Geidt</td>
-                            <td className='amount text-[#353945] pr-[7.3475rem] text-base font-normal'>5000</td>
-                            <td className='remita text-[#353945] pr-[10.1875rem] text-base font-normal'>Remita</td>
-                            <td className='pr-[9.5625rem]'><span className='status text-[#15A336] px-[10px] py-[4px] text-base rounded-lg max-w-max  font-normal'>Success</span></td>
-                            <td className='date text-[#353945] pr-[6rem] text-base font-normal'>Oct. 14, 2021</td>
-                            <td> <More /></td>
-                        </tr>
-                    </tbody>
+                        
                 </table> */}
                 <div>
                     <Table tableData={data} heading={heading} />
+                    {/* {selectedId} */}
                 </div>
 
 
