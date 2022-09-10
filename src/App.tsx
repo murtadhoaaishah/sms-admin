@@ -11,6 +11,7 @@ import Parents from './pages/ParentsPage'
 import Events from './pages/EventsPage'
 import FeesDetails from './pages/FeesDetailsPage'
 import FeesAndLevies from './pages/FeesAndLevies'
+import StudentDetails from './pages/StudentPage/StudentDetails'
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
       <Route path='/dashboard/events' element={<Events />} />
       <Route path='/dashboard/feesandlevies/' element={<FeesAndLevies />} />
       <Route path='/dashboard/feesandlevies/:id' element={<FeesDetails />} />
+      <Route path='/dashboard/student/studentdetails' element={<StudentDetails />} />
     </Routes>
 
   )

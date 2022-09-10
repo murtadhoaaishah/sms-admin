@@ -5,6 +5,7 @@ import Filters from '../../../atom/Input/Filters'
 import SearchInput from '../../../atom/SearchInput'
 import More from '../../../atom/Vectors/More'
 import AuthLayout from '../../../Layout/AuthLayout'
+import DashboardLayout from '../../../Layout/DashboardLayout'
 
 const StudentDetails = () => {
     const [selectedStudent, setSelectedStudent] = useState('')
@@ -98,13 +99,12 @@ const StudentDetails = () => {
     }))
     return (
         <div>
-            <AuthLayout >
+            <DashboardLayout>
                 <SearchInput />
                 <Filters />
                 <Export />
                 <Button label='Enrol student' />
-                <
-            </AuthLayout>
+            </DashboardLayout>
         </div>
     )
 }
