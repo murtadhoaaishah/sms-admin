@@ -7,7 +7,7 @@ const Subjects = () => {
     let subject = []
     return (
         <div>
-            <DashboardLayout emptypageContent={
+            {/* <DashboardLayout emptypageContent={
                 subject.length === 0 ? {
                     img: <SubjectEmptyPageImage />,
                     text: 'You have not added any subject yet',
@@ -19,8 +19,8 @@ const Subjects = () => {
                 } : undefined
             }>
 
-            </DashboardLayout>
-        </div>
+            </DashboardLayout> */}
+        </div >
     )
 }
 

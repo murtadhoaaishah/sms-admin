@@ -24,9 +24,8 @@ import React, { ReactNode, useRef } from 'react'
 import ModalOverlay from './ModalOverlay'
 import { useClickAway } from 'react-use'
 import './Modal.scss'
-import HeadingDescription from '../../atoms/Typography/HeadingDescription'
-// import CloseIcon from '../../atoms/Vectors/CloseIcon'
-import H3 from '../../atoms/Typography/H3'
+// import HeadingDescription from '../../atoms/Typography/HeadingDescription'
+// import H3 from '../../atoms/Typography/H3'
 // import CloseIcon2 from '../../atoms/Vectors/CloseIcon2'
 
 export interface ModalProps {
@@ -48,7 +47,7 @@ function Modal({ openModal, icon, children, title, subtext, closeModal = () => {
 
     return (
         <>
-            {openModal && <ModalOverlay></ModalOverlay>}
+            {/* {openModal && <ModalOverlay></ModalOverlay>}
 
             <div className={`modal-box  ${openModal ? 'open-modal' : ''}`} style={{ width: width, }} ref={ref}>
 
@@ -59,14 +58,15 @@ function Modal({ openModal, icon, children, title, subtext, closeModal = () => {
                             subtext && <HeadingDescription align='left'>{subtext}</HeadingDescription>
                         }
                     </div>
-                    <button onClick={() => closeModal()}>
-                        <CloseIcon2 />
+                    <button onClick={() => closeModal()}> */}
+            {/* <CloseIcon2 /> */}
+            {/* <img src='/public/vectors/borderedCross.svg' />
                     </button>
                 </div>
                 <div className="mt-[0px]">
                     {children}
                 </div>
-            </div>
+            </div> */}
         </>
     )
 }
