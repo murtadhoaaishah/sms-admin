@@ -1,3 +1,3 @@
 # sms-admin
 
-[preview](murtadhoaaishasmsadmin.netlify.app)
+[preview](https://murtadhoaaishasmsadmin.netlify.app)
