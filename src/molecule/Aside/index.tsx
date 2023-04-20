@@ -141,7 +141,7 @@ const Aside = () => {
 
   return (
     <main>
-      <img src="/public/vectors/logo.svg" alt="logo" className="image" />
+      <img src="/vectors/logo.svg" alt="logo" className="image" />
       <section>
         <div className="dashboard-div">
           <Home color={"#1B72E7"} className="home" />
